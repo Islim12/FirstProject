@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="org.islimakkaya.samples.application.firstproject.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/toDetailPage"
+            app:destination="@id/categoryDetailPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchPageFragment"
+        android:name="org.islimakkaya.samples.application.firstproject.SearchPageFragment"
+        android:label="fragment_search_page"
+        tools:layout="@layout/fragment_search_page" />
+
+    <fragment
+        android:id="@+id/allSegmentsFragment"
+        android:name="org.islimakkaya.samples.application.firstproject.AllSegmentsFragment"
+        android:label="fragment_all_segments"
+        tools:layout="@layout/fragment_all_segments" />
+
+    <fragment
+        android:id="@+id/profilePageFragment"
+        android:name="org.islimakkaya.samples.application.firstproject.ProfilePageFragment"
+        android:label="fragment_profile_page"
+        tools:layout="@layout/fragment_profile_page" />
+
+    <fragment
+        android:id="@+id/campaignPageFragment"
+        android:name="org.islimakkaya.samples.application.firstproject.CampaignPageFragment"
+        android:label="fragment_campaign_page"
+        tools:layout="@layout/fragment_campaign_page" />
+    <fragment
+        android:id="@+id/categoryDetailPageFragment"
+        android:name="org.islimakkaya.samples.application.firstproject.CategoryDetailPageFragment"
+        android:label="CategoryDetailPageFragment"
+        tools:layout="@layout/fragment_category_detail_page">
+        <argument
+            android:name="categoryObject"
+            app:argType="org.islimakkaya.samples.application.firstproject.Categories" />
+    </fragment>
+
+
+</navigation>

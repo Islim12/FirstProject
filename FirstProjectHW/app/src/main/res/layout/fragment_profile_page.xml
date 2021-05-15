@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context=".ProfilePageFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profilePageToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profilePageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/profile_page_title"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profilePageToolbar"
+        app:layout_constraintEnd_toEndOf="@+id/profilePageToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/personName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+
+        android:text="@string/person_name"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_person"
+        app:iconSize="80dp"
+        app:iconTint="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilePageToolbar" />
+
+    <Button
+        android:id="@+id/emailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+
+        android:text="@string/person_email_address"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_email"
+        app:iconTint="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personName" />
+
+    <Button
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="@string/person_phone_number"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_phone"
+        app:iconTint="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

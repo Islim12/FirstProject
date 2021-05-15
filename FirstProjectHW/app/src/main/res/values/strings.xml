@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">006-FirstProject</string>
+
+    <!-- Bar Title Names -->
+    <string name="null_title"></string>
+    <string name="main_title">Fast Delivery</string>
+    <string name="search_page_title">Search</string>
+    <string name="profile_page_title">Profile</string>
+    <string name="campaign_page_title">Campaigns</string>
+    <string name="detail_page_title">Products</string>
+    <string name="person_name">İslim Akkaya</string>
+    <string name="person_email_address">...@gmail.com</string>
+    <string name="person_phone_number">+90 (XXX) XXX XX XX</string>
+
+</resources>
