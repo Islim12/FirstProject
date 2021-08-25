@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import org.islimakkaya.samples.application.firstproject.databinding.CardDesignBinding
+import org.islimakkaya.samples.application.firstproject.fragment.HomePageFragmentDirections
 
 class CategoriesAdapter(var mContext: Context, var categoriesList: List<Categories>)
     : RecyclerView.Adapter<CategoriesAdapter.CardDesignHolder>() {

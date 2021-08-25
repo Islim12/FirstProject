@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.navArgs
 import org.islimakkaya.samples.application.firstproject.databinding.FragmentCategoryDetailPageBinding
+import org.islimakkaya.samples.application.firstproject.fragment.CategoryDetailPageFragmentArgs
 
 class CategoryDetailPageFragment : Fragment() {
     private lateinit var design: FragmentCategoryDetailPageBinding

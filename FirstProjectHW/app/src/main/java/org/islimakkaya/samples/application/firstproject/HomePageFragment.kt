@@ -19,7 +19,7 @@ class HomePageFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?)
     : View? {
-        design = DataBindingUtil.inflate(inflater,R.layout.fragment_home_page, container, false)
+        design = DataBindingUtil.inflate(inflater, R.layout.fragment_home_page, container, false)
         design.homePageRecyclerList.layoutManager = StaggeredGridLayoutManager(4, StaggeredGridLayoutManager.VERTICAL)
 
         val c1 = Categories(1, "İslim", "name")
